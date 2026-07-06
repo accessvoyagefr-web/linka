@@ -4,7 +4,7 @@ import google.generativeai as genai
 # Configuration de la page
 st.title("LINKA - Votre portail d'accès intelligent")
 
-# Récupération de la clé depuis les Secrets (il faut que ce nom soit identique à celui dans Streamlit)
+# Récupération de la clé depuis les Secrets
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
